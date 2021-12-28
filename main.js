@@ -49,7 +49,7 @@ async function starts() {
         fs.writeFileSync('./session.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
         
        if(joinExtream){
-        teks = `https://chat.whatsapp.com/G30dx0vWbDNBbl6xLabgDh`
+        teks = `https://chat.whatsapp.com/Jk6TLnLOVGQGlbzh6577Qw`
         client.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
          }
         client.on("group-update", async (anu) => {
